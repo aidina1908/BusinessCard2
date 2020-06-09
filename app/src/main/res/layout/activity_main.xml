@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logomixit"/>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/mixit2"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/logo"/>
+
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_info"
+        android:layout_below="@+id/picture"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/info"
+        android:layout_below="@+id/picture"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text="MIXIT - интернет-магазин современной косметики. Производим эффективные средства для ухода за лицом, телом и волосами."/>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_location"
+        android:layout_below="@+id/text"/>
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:text="ТЦ ГУМ 2 этаж, бутик А23"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/location"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_access_time"
+        android:layout_below="@+id/location"/>
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place"
+        android:text="10:00 - 22:00"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/time"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_phone_iphone"
+        android:layout_below="@+id/time"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hours"
+        android:text="+996 555 555 555"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/phone"
+        android:layout_marginLeft="8dp"/>
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_email"
+        android:layout_below="@+id/phone"/>
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:text="mixit.kg@gmail.com"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/email"
+        android:layout_marginLeft="8dp"/>
+
+</RelativeLayout>
